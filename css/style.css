@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: lato,Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -8,16 +9,30 @@ header {
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 50px;
     padding: 25px;
     text-align: center;
 
 }
 
 h3 {
-    font-size: 30px;
-    padding: 15px;
+    font-size: 35px;
+    margin-bottom: 10px;
     text-align: left;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-top: -10px;
+
+}
+
+h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-top: -5px;
+
 
 }
 
@@ -34,18 +49,51 @@ footer h1 {
 
 }
 
+/* div rows */
+
+.row {
+    display: flex;
+    
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+  }
+  .column25 {
+    flex: 25%;
+  }
+
+  .column #box {
+
+    max-width: 500px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+
+  }
+   .column p{
+
+    color: blue;
+    padding: 10px;
+
+  }
+
+  /* main */
+
 .main{
     margin: auto;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1000px;
     top: 50%;
     left: 50%;
     
 }
 
 .sidenav a{
-    color: aqua;
-    width: 25%;
+    color: crimson;
+    margin-left: 15px;
 
 }
 
@@ -57,31 +105,26 @@ nav {
   
   }
   
-  ul {
+.sidenav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
   
- 
-  
-  li a {
-    color: white;
+.sidenav  li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
 
 
 
 img {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     float: right;
+    padding: 10px;
 
 }
 
@@ -92,12 +135,3 @@ img {
 
 
 }
-
-.content p{
-    color: blue;
-
-    
-}
-
-
-
