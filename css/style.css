@@ -14,6 +14,7 @@ header h1 {
     padding: 25px;
     text-align: center;
     margin: 0%;
+
 }
 
 h3 {
@@ -33,6 +34,7 @@ h4 {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 25px;
+    color: linen;
 }
 
 footer  {
@@ -76,7 +78,7 @@ footer h1 {
 .main{
     margin: auto;
     width: 100%;
-    max-width: 1000px;
+ /*    max-width: 1000px; */
     top: 50%;
     left: 50%;
 }
@@ -128,14 +130,49 @@ img {
 }
 
 aside p{
-    border: 3px #333333 solid;
+    border: 3px linen solid;
     text-align: center;
     padding: 10px;
     width: 60%;
     margin: 0px auto 10px auto  ;
+    color: linen;
+    background-color: maroon;
 }
 
 .aside {
     flex: 25%;
     background-color: lightslategrey;
 }
+/* @media (max-width: 600px) {
+    nav {
+        background-color: lightgreen; 
+    }
+    }
+}
+*/
+
+@media only screen and (max-width: 768px) {
+    
+    .sidenav {display: none;}
+    .topnav {display: block; }
+
+    }
+
+@media only screen and (min-width: 769px) {
+
+    .sidenav {display: block;}
+    .topnav {display: none; }
+
+    }    
+  }
+
+  .topnav {
+    font-family: lato,Verdana, Geneva, Tahoma, sans-serif;  
+    /* text-transform: uppercase;
+    padding: 25px 40px 100px 40px;
+    text-align: center; */
+    font-size: 9px;
+    color: linen;
+    background-color: maroon;
+}
+
