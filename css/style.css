@@ -4,7 +4,7 @@
 }
 
 header {
-    position: sticky;
+    /* position: sticky; */
     background-color: crimson;
     color: linen;
 }
@@ -143,36 +143,3 @@ aside p{
     flex: 25%;
     background-color: lightslategrey;
 }
-/* @media (max-width: 600px) {
-    nav {
-        background-color: lightgreen; 
-    }
-    }
-}
-*/
-
-@media only screen and (max-width: 768px) {
-    
-    .sidenav {display: none;}
-    .topnav {display: block; }
-
-    }
-
-@media only screen and (min-width: 769px) {
-
-    .sidenav {display: block;}
-    .topnav {display: none; }
-
-    }    
-  }
-
-  .topnav {
-    font-family: lato,Verdana, Geneva, Tahoma, sans-serif;  
-    /* text-transform: uppercase;
-    padding: 25px 40px 100px 40px;
-    text-align: center; */
-    font-size: 9px;
-    color: linen;
-    background-color: maroon;
-}
-
