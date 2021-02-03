@@ -83,7 +83,7 @@ footer h1 {
     left: 50%;
 }
 
-nav {
+nav, .leftcolumn {
     flex: 25%;
     background-color: lightslategrey;
     color: magenta;
@@ -151,10 +151,42 @@ aside p{
 }
 */
 
+.topnav {
+    font-family: lato,Verdana, Geneva, Tahoma, sans-serif;  
+    display: inline;
+    text-transform: uppercase;
+    /*padding: 25px 40px 100px 40px;*/
+    text-align: center;
+    font-size: 18px;
+    color: linen;
+    background-color: maroon;
+}
+
+.topnav a {
+    color: rgb(196, 196, 196);  
+}
+
+.topnav a:hover{
+    color: linen;  
+}
+
+.topnav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+  
+.topnav  li a {
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
 @media only screen and (max-width: 768px) {
     
     .sidenav {display: none;}
     .topnav {display: block; }
+    .leftcolumn {display: none}
 
     }
 
@@ -164,15 +196,3 @@ aside p{
     .topnav {display: none; }
 
     }    
-
-
-  .topnav {
-    font-family: lato,Verdana, Geneva, Tahoma, sans-serif;  
-    /* text-transform: uppercase;
-    padding: 25px 40px 100px 40px;
-    text-align: center; */
-    font-size: 9px;
-    color: linen;
-    background-color: maroon;
-}
-
