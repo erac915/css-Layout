@@ -24,7 +24,7 @@ h3, h4 {
 
 h3 {
     font-size: 35px;
-    text-align: left;
+    text-align: center;
     font-weight: 100;
     margin-top: 5px;
     margin-left: 20px;
@@ -72,6 +72,7 @@ footer h1 {
     color: rgb(60, 60, 66);
     padding: 5px 20px 1px 20px;
     font-size: 15px;
+    text-align: justify;
 }
 
   /* main */
@@ -140,7 +141,7 @@ aside p{
     background-color: maroon;
 }
 
-.aside {
+.aside, .asidebottom {
     flex: 25%;
     background-color: lightslategrey;
 }
@@ -154,13 +155,12 @@ aside p{
 
 .topnav {
     font-family: lato,Verdana, Geneva, Tahoma, sans-serif;  
-    display: inline;
     text-transform: uppercase;
-    /*padding: 25px 40px 100px 40px;*/
+    padding: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     color: linen;
-    background-color: maroon;
+    background-color: rgb(68, 10, 10);
 }
 
 .topnav a {
@@ -176,24 +176,62 @@ aside p{
     padding: 0;
     list-style-type: none;
 }
+
+.topnav  li {
+    display: inline;
+}
   
 .topnav  li a {
     padding: 14px 16px;
     text-decoration: none;
+    display: inline;
 }
+@media print { 
+    /* All your print styles go here */
+    .sidenav, .topnav, .aside, .leftcolumn, .asidebottom, img, footer { display: none; } 
+   }
 
 
 @media only screen and (max-width: 768px) {
     
-    .sidenav {display: none;}
+    /* .sidenav {display: none;} */
     .topnav {display: block; }
-    .leftcolumn {display: none}
-
+    .leftcolumn {display: none;}
+    .aside {display: none;}
+    .asidebottom p{
+        border: 3px linen solid;
+        text-align: center;
+        padding: 20px;
+        width: 60%;
+        margin: 0px auto 20px auto  ;
+        color: linen;
+        background-color: maroon;
     }
+
+    .asidebottom {
+        padding: 10px;
+    }
+
+    img {
+        /* width: 300px; */
+        max-width: 100%;
+        float: right;
+        padding: 10px;
+    }
+
+      }
 
 @media only screen and (min-width: 769px) {
 
-    .sidenav {display: block;}
+    /* .sidenav {display: block;} */
     .topnav {display: none; }
+    .asidebottom {display: none;}
+    
+    img {
+        width: 100%;
+        max-width: 200px;
+        float: right;
+        padding: 10px;
+    }
 
     }    
